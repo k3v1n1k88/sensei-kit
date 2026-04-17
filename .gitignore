@@ -1,33 +1,62 @@
+# ─── Dependencies + lockfiles ──────────────────────────────────────
 node_modules/
-*.tgz
-.claude/session-state/
-.claude/sensei/
-.DS_Store
-Thumbs.db
-*.log
-.vscode/
-.idea/
-.next/
-coverage/
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+
+# ─── npm pack artifacts ────────────────────────────────────────────
+*.tgz
+
+# ─── Sensei runtime state (never commit) ───────────────────────────
+.claude/session-state/
+.claude/sensei/
+
+# ─── Hook + skill build outputs ────────────────────────────────────
+.claude/hooks/.logs/
+.claude/**/scripts/dist/
+.opencode/**/scripts/dist/
+
+# ─── Test + validation scratch ─────────────────────────────────────
+test-results.txt
+validation-report.txt
+
+# ─── Secrets (allow .env.example template) ─────────────────────────
 .env*
 !.env.example
+
+# ─── Build outputs ─────────────────────────────────────────────────
+.next/
 .vercel
+coverage/
 *.tsbuildinfo
 next-env.d.ts
-.dart_tool
+.dart_tool/
+
+# ─── OS / editor junk ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.log
+logs.txt
+.vscode/
+.idea/
+
+# ─── Python caches ─────────────────────────────────────────────────
+__pycache__/
+*.pyc
+.serena/cache/
+
+# ─── iOS / Firebase ────────────────────────────────────────────────
 GoogleService-Info.plist
-repomix-output.xml
-.serena/cache
+
+# ─── Ephemeral / scratch ───────────────────────────────────────────
 screenshots/
 docs/screenshots/
-logs.txt
-test-ck
-__pycache__
+repomix-output.xml
+test-ck/
 prompt.md
 ck.md
+
+# ─── Tool backups + worktrees ──────────────────────────────────────
 .opencode.backup/
 external/
 worktrees/
