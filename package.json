@@ -1,6 +1,6 @@
 {
   "name": "@sensei-kit/kit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Mode system for Claude Code that flips default from code generator to mentor. Protects productive struggle via Socratic tiered hints.",
   "bin": {
     "sensei": "./bin/cli.js"
