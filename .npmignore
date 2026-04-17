@@ -1,0 +1,27 @@
+# Dev-only content — NEVER ship in published package.
+plans/
+.claude/
+.opencode/
+AGENTS.md
+CLAUDE.md
+REQUIREMENT.md
+REQUIREMENT-VI.md
+release-manifest.json
+tests/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+.vscode/
+.idea/
+
+# CI / scratch
+.github/
+.gitignore
+*.tgz
+node_modules/
+
+# Placeholder files — directories now have real content.
+**/.gitkeep

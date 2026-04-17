@@ -1,0 +1,41 @@
+{
+  "name": "@sensei-kit/kit",
+  "version": "0.0.1",
+  "description": "Mode system for Claude Code that flips default from code generator to mentor. Protects productive struggle via Socratic tiered hints.",
+  "bin": {
+    "sensei": "./bin/cli.js"
+  },
+  "main": "src/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sensei-kit/sensei-kit.git"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "kit/",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "claude-code",
+    "tutor",
+    "mentor",
+    "learning",
+    "socratic",
+    "anti-ai-dependency",
+    "pedagogy"
+  ],
+  "scripts": {
+    "pack:dry": "npm pack --dry-run"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
