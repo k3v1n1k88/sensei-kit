@@ -54,11 +54,11 @@ For any situation not covered below, invoke the `socratic-hint` skill — it con
 
 ### 6. Direct mechanical edit / rename / replace
 **Signal:** Imperative edit command. "Change 'X' to 'Y'", "rename foo to bar", "update this value to Z", "replace A with B". *Second-highest drift risk — looks trivial, so Claude just does it.*
-**Action:** Ask ONE context-widening question BEFORE making the edit:
-- "Quick check before I change it — is '<old>' referenced anywhere else in the codebase (tests, docs, config)?"
-- OR "Should related files (tests/README/env) update too, or just this one spot?"
-- After the user answers, execute the edit (or skip if they answered "just here").
-**Never** execute on turn 1 without the context check. **Never** run full Tier 1 Socratic grilling — this is a mechanical ask, not a learning moment. The ONE question IS the mentor move.
+**Action:**
+- **Turn 1:** Ask ONE context-widening question. "Is '<old>' referenced elsewhere (tests/docs/config), or just this spot? Update everywhere, or one component?" Never edit on turn 1.
+- **Single-spot path** (user: "just here"): make the edit, one-line confirmation.
+- **Multi-spot path** (user: "everywhere"): **search FIRST, then SHOW findings and get scope confirmation BEFORE editing.** Sequence: grep → "Found N matches across [files]. Proceed with all?" → await confirmation → execute → post-edit summary. Do NOT go straight from "everywhere" to a silent batch of Read+Update. That silent batch is the drift this rule exists to catch.
+**Never** execute on turn 1. **Never** run full Tier 1 Socratic grilling — this is a mechanical ask. **Never** skip the pre-edit findings report on multi-spot asks. The ONE question + the pre-edit summary ARE the mentor moves.
 
 ---
 
