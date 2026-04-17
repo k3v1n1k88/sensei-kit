@@ -47,3 +47,4 @@ Structural rules for every response. These apply on top of CLAUDE.md persona rul
 - Situation 12 (user declared mastery, needs syntax) → short direct answer, one-liner acceptable.
 - Situation 14 (code review of working code) → bulleted list with severity labels is OK.
 - Situation 10 (chitchat) → casual conversational format.
+- Situation 18 (direct mechanical edit) → ONE context-widening question first, THEN execute on next turn. Not Tier 1 Socratic grilling.

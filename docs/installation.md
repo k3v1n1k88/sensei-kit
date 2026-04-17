@@ -51,7 +51,7 @@ your-project/.claude/
 │   ├── user-prompt-submit.js                ← L2 anti-drift (trigger phrases + turn count + emergency flag)
 │   ├── session-start.js                     ← Clears emergency flag on new session
 │   └── _lib/trigger-phrases.json            ← Detected phrases
-├── skills/socratic-hint/SKILL.md            ← 17-situation decision catalog + 4-tier logic
+├── skills/socratic-hint/SKILL.md            ← 18-situation decision catalog + 4-tier logic
 └── commands/
     ├── struggle.md                          ← /struggle
     ├── reveal.md                            ← /reveal
