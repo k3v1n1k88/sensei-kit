@@ -13,7 +13,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sensei-kit/sensei-kit.git"
+    "url": "git+https://github.com/k3v1n1k88/sensei-kit.git"
   },
   "files": [
     "bin/",

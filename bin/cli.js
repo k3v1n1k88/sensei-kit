@@ -12,7 +12,7 @@ Usage:
   sensei --help                 Show this help
   sensei --version              Show version
 
-Docs: https://github.com/sensei-kit/sensei-kit
+Docs: https://github.com/k3v1n1k88/sensei-kit
 `;
 
 const [, , cmd, ...rest] = process.argv;

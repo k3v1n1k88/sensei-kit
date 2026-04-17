@@ -15,7 +15,7 @@ npx @sensei-kit/kit init
 **Manual:**
 
 ```
-git clone https://github.com/sensei-kit/sensei-kit
+git clone https://github.com/k3v1n1k88/sensei-kit
 cp -r sensei-kit/kit/.claude/* your-project/.claude/
 ```
 

@@ -25,7 +25,7 @@ Use `--force` to overwrite all conflicts without prompting (useful for upgrades)
 ## Path 2 — manual
 
 ```
-git clone https://github.com/sensei-kit/sensei-kit
+git clone https://github.com/k3v1n1k88/sensei-kit
 cp -r sensei-kit/kit/.claude/* your-project/.claude/
 ```
 
